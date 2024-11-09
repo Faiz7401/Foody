@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foody: UMP Food Delivery System</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+    <header>
+        <img src="foody logo.png" alt="Foody Logo">
+        <ul>
+            <li><h1>Foody</h1></li>
+            <li><p>UMP Food Delivery System</p></li>
+        </ul>
+        <a href="#"></a><button class="logout" >Logout</button>
+    </header>
+
+    <div class="row">
+        <div class="sidebar">
+            <h2>Home</h2>
+            <ul>
+                <li><a href="foody.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-address-card"></i> Orders</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="complaint home.html"><i class="fas fa-exclamation"></i> Complaint</a></li>
+                <li><a href="creport.html"><i class="fas fa-file"></i> Report</a></li>
+            </ul> 
+            </div>
+        <div class="main">
+            <div class="info">
+                
+                <div>
+                    <table>
+                    <td id="piechart">
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Type', 'Total'],
+  ['Late Delivery', 1],
+  ['Billing/Collections', 1],
+  ['Package Damage during Delivery', 1],
+  ['Others', 1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Total Complaints by Category', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+                </td>
+
+                <td id="piechart2">
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Month', 'Total'],
+  ['January', 1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Total Complaints by Month', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+  chart.draw(data, options);
+}
+</script>
+</td>
+                </table></div></div></div>
+            </div>
+        </div>
+    </div>
+
+    <footer><hr><br> &copy 2022 All Right Reserved</footer>
+    
+</body>
+</html>

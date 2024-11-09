@@ -1,0 +1,193 @@
+tr, td {
+    text-align: left;
+}
+
+/* Form */
+
+h1 {
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+
+table[name="compform"] {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a {
+    text-align: left;
+    border: 0px;
+    padding: 0%;
+}
+
+.c {
+    text-align: left;
+    padding: 0%;
+}
+
+.compform tr, td {
+    text-align: left;
+    border: 0ch;
+    padding: 0%;
+    font-size: small;
+}
+
+/* List Table */
+
+table[name="list"], tr, td {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+        
+/*Header Style*/
+header{
+    display: flex;
+    overflow: hidden;
+    position: sticky;
+    padding: 16px 10%;
+    align-items: center;
+    position: -webkit-sticky;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header ul{
+    margin: auto;
+    text-align: center;
+}
+
+img{
+    max-width: 11%;
+    height: auto;
+}
+
+/*Log Out Button*/
+.logout{ 
+    float: right;
+    color: #990000;
+    padding: 8px 12px;
+    border-radius: 8px; 
+    border: 2px solid #990000;
+    background-color: white;
+	font-size: 16px;
+}
+
+.logout:hover {
+    color: white;
+    background-color: #990000;
+	transform: scale(1.2);
+}
+
+/* Body Container*/
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(245, 245, 245);
+}
+
+table buttons, tr, td {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(245, 245, 245);    
+}
+
+/*Column Sizing*/
+.column{
+    float: left;
+    padding: 10px;
+    height: 300px;
+}
+
+.left {
+    width: 25%;
+}
+
+.middle {
+    width: 5%;
+}
+
+.right {
+    width: 70%;
+}
+
+/*SideBar Style*/
+.left {
+    width: 30%;
+    height: 10%;
+    padding: 10px 0px;
+    background: #990000;
+}
+
+.left h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.left ul li{
+    padding: 15px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.left ul li a {
+    display: block;
+    color: #bdb8d7;
+	margin-left: 30px;
+}
+
+.left ul li:hover, ul li a:hover{
+    color: white;
+    background-color: #CE2029;
+	transform: scale(1.1);
+}
+
+/*back button*/
+.middle {
+    width: 5%;
+    padding-left: 2%;
+    padding-top: 2%;
+    color: #990000;
+    font-size: x-large;
+}
+        
+/*Main Content*/
+
+.right .info{
+    color: #717171;
+    line-height: 25px;
+}
+
+
+.right .info div{
+    margin-bottom: 20px;
+}

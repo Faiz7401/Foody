@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+        
+/*Header Style*/
+header{
+    display: flex;
+    overflow: hidden;
+    position: sticky;
+    padding: 16px 10%;
+    align-items: center;
+    position: -webkit-sticky;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header ul{
+    margin: auto;
+    text-align: center;
+}
+
+img{
+    max-width: 11%;
+    height: auto;
+}
+
+/*Log Out Button*/
+.logout{ 
+    float: right;
+    color: #990000;
+    padding: 8px 12px;
+    border-radius: 8px; 
+    border: 2px solid #990000;
+    background-color: white; 
+}
+
+.logout:hover {
+    color: white;
+    background-color: #990000;
+}
+
+/* Body Container*/
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(245, 245, 245);
+}
+
+/*SideBar Style*/
+.sidebar {
+  flex: 20%;
+  width: 100px;
+  height: 100%;
+  padding: 30px 0px;
+  background: #990000;
+}
+
+.sidebar h2{
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.sidebar ul li a {
+  display: block;
+  color: #bdb8d7;
+margin-left: 30px;
+}
+
+.sidebar ul li:hover, ul li a:hover{
+  color: white;
+  background-color: #CE2029;
+transform: scale(1.1);
+}
+        
+/*Main Content*/
+.main {   
+    flex: 80%;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.main .info{
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+}
+
+.main .info div{
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+footer {
+    padding: 20px;
+    color: #717171;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-bottom: -2000;
+    font-size: 15px;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: #990000;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #990000;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .clist{
+      background-color: #990000;
+      color: white;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 12px 20px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-size: 15px;
+      display: inline-block;
+      margin-right: 25px;
+      margin-left: 15px;
+  }
+
+  .report{
+    background-color: #990000;
+    color: white;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+}
+
+input{
+  background-color:#e0e4e8;
+  cursor: pointer;
+  border: 1px solid;
+  display: inline-block;
+}
+
+table, td{
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.c{
+  color: #990000;
+    padding: 8px 12px;
+    border-radius: 8px; 
+    border: 2px solid #990000;
+    background-color: white; 
+}
+
+.c:hover{
+    color: white;
+    background-color: #990000;
+}
